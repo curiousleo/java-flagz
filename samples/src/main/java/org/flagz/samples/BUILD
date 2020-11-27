@@ -17,8 +17,8 @@ java_binary(
     srcs = ["EtcdSampleApp.java"],
     main_class = "org.flagz.samples.EtcdSampleApp",
     deps = [
-        "//flagz-java/src/main/java/org/flagz",
         "//flagz-etcd/src/main/java/org/flagz",
+        "//flagz-java/src/main/java/org/flagz",
         "//third_party/etcd4j",
         "//third_party/guava",
         "//third_party/slf4j:api",

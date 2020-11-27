@@ -1,18 +1,17 @@
 package(default_visibility = ["//visibility:public"])
 
 java_library(
-  name = "api",
-  exports = [
-    "@org_slf4j_api_artifact//jar",
-  ],
-  licenses = ["permissive"],
+    name = "api",
+    licenses = ["permissive"],
+    exports = [
+        "@maven//:org_slf4j_slf4j_api",
+    ],
 )
 
 java_library(
-  name = "simple-stdout",
-  exports = [
-    "@org_slf4j_simple_artifact//jar",
-  ],
-  licenses = ["permissive"],
+    name = "simple-stdout",
+    licenses = ["permissive"],
+    exports = [
+        "@maven//:org_slf4j_slf4j_simple",
+    ],
 )
-
