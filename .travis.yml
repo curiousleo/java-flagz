@@ -1,4 +1,8 @@
-dist: xenial
+language: java
+
+os: linux
+
+dist: bionic
 
 jdk:
   - oraclejdk8
