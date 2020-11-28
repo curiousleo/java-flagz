@@ -5,7 +5,7 @@ os: linux
 dist: bionic
 
 jdk:
-  - oraclejdk8
+  - openjdk8
 
 env:
   - BAZEL_VERSION=3.3.1
