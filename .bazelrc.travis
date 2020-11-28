@@ -10,8 +10,8 @@ build --verbose_failures
 # runs stuff in a container, and since Travis already runs its script
 # in a container (unless you require sudo in your .travis.yml) this
 # fails to run tests.
-build --spawn_strategy=standalone --genrule_strategy=standalone
-test --test_strategy=standalone
+build --spawn_strategy=standalone --strategy=Genrule=standalone
+test --test_strategy=standalone --strategy=TestRunner=standalone
 
 # Below this line, .travis.yml will cat the default bazelrc.
 # This is needed so Bazel starts with the base workspace in its
